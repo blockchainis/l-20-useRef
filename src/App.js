@@ -1,5 +1,8 @@
+import Focus from "./components/Focus";
+import Timer from "./components/Timer";
+
 function App() {
-  return <></>;
+  return <Focus />;
 }
 
 export default App;
