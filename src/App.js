@@ -1,5 +1,6 @@
-import Focus from "./components/Focus";
-import Timer from "./components/Timer";
+// import Focus from "./components/Focus";
+import Focus from "./components/FocusTwo";
+import Timer from "./components/TimerTwo";
 
 function App() {
   return <Focus />;
