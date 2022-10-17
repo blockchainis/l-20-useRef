@@ -1,25 +1,9 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 function Timer() {
   const [time, setTime] = useState(0);
-  const [isRunning, setIsRunning] = useState(false);
-  const timerIdRef = useRef(null);
-  function handleStart() {
-    if (isRunning) {
-      return;
-    }
-    setIsRunning(true);
-    timerIdRef.current = setInterval(() => {
-      setTime((t) => t + 1);
-    }, 1000);
-  }
-  function handleStop() {
-    if (!isRunning) {
-      return;
-    }
-    setIsRunning(false);
-    clearInterval(timerIdRef.current);
-  }
+  function handleStart() {}
+  function handleStop() {}
   return (
     <>
       <h1>타이머: {time}</h1>
